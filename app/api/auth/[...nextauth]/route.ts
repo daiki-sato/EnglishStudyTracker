@@ -21,4 +21,4 @@ export const authConfig: NextAuthConfig = {
 };
 
 const { handlers } = NextAuth(authConfig);
-export const { GET, POST } = handlers;  // ← ルートはGET/POSTだけexport
+export const { GET, POST } = handlers; // ✅ ルートはGET/POSTのみ
