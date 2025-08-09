@@ -1,6 +1,5 @@
-// lib/auth.ts
 import NextAuth from "next-auth";
 import { authConfig } from "@/app/api/auth/[...nextauth]/route";
 
-// NextAuthから必要な関数を生成してエクスポート
+// ここで auth / signIn / signOut を生成して公開
 export const { auth, signIn, signOut } = NextAuth(authConfig);
